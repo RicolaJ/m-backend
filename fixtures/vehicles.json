@@ -1,0 +1,230 @@
+[
+  {
+    "model": "vehicles.vehicle",
+    "pk": 1,
+    "fields": {
+      "marque": "Renault",
+      "modele": "Clio",
+      "annee": 2021,
+      "kilometrage": 34000,
+      "prix": "9990.00",
+      "loyer_mensuel": "189.00",
+      "motorisation": "essence",
+      "couleur": "Blanc",
+      "description": "Renault Clio V en excellent état, première main, carnet d'entretien complet. Climatisation automatique, GPS intégré, caméra de recul.",
+      "type": "achat",
+      "disponible": true,
+      "created_at": "2024-01-10T09:00:00Z",
+      "updated_at": "2024-01-10T09:00:00Z"
+    }
+  },
+  {
+    "model": "vehicles.vehicle",
+    "pk": 2,
+    "fields": {
+      "marque": "Peugeot",
+      "modele": "308",
+      "annee": 2020,
+      "kilometrage": 52000,
+      "prix": "14500.00",
+      "loyer_mensuel": "269.00",
+      "motorisation": "diesel",
+      "couleur": "Gris Platinium",
+      "description": "Peugeot 308 SW GT Line, toit panoramique, sièges chauffants, ConnectedCAM. Entretien Peugeot garanti.",
+      "type": "location",
+      "disponible": true,
+      "created_at": "2024-01-11T10:00:00Z",
+      "updated_at": "2024-01-11T10:00:00Z"
+    }
+  },
+  {
+    "model": "vehicles.vehicle",
+    "pk": 3,
+    "fields": {
+      "marque": "Volkswagen",
+      "modele": "Golf",
+      "annee": 2022,
+      "kilometrage": 18500,
+      "prix": "22900.00",
+      "loyer_mensuel": "389.00",
+      "motorisation": "hybride",
+      "couleur": "Noir Profond",
+      "description": "Golf 8 GTE hybride rechargeable, autonomie électrique 60 km, Digital Cockpit Pro, IQ.LIGHT LED.",
+      "type": "achat",
+      "disponible": true,
+      "created_at": "2024-01-12T11:00:00Z",
+      "updated_at": "2024-01-12T11:00:00Z"
+    }
+  },
+  {
+    "model": "vehicles.vehicle",
+    "pk": 4,
+    "fields": {
+      "marque": "Toyota",
+      "modele": "Yaris",
+      "annee": 2021,
+      "kilometrage": 28000,
+      "prix": "15800.00",
+      "loyer_mensuel": "229.00",
+      "motorisation": "hybride",
+      "couleur": "Rouge Ardent",
+      "description": "Toyota Yaris 4ème génération full hybrid, consommation 3.5L/100km. Idéale en ville avec sa faible consommation.",
+      "type": "location",
+      "disponible": true,
+      "created_at": "2024-01-13T14:00:00Z",
+      "updated_at": "2024-01-13T14:00:00Z"
+    }
+  },
+  {
+    "model": "vehicles.vehicle",
+    "pk": 5,
+    "fields": {
+      "marque": "BMW",
+      "modele": "Serie 1",
+      "annee": 2020,
+      "kilometrage": 45000,
+      "prix": "24500.00",
+      "loyer_mensuel": "429.00",
+      "motorisation": "essence",
+      "couleur": "Bleu Métal",
+      "description": "BMW 118i F40, Live Cockpit Professional, Park Assistant, M Sport. Suivi BMW Premium Selection.",
+      "type": "achat",
+      "disponible": true,
+      "created_at": "2024-01-14T09:30:00Z",
+      "updated_at": "2024-01-14T09:30:00Z"
+    }
+  },
+  {
+    "model": "vehicles.vehicle",
+    "pk": 6,
+    "fields": {
+      "marque": "Tesla",
+      "modele": "Model 3",
+      "annee": 2022,
+      "kilometrage": 22000,
+      "prix": "34900.00",
+      "loyer_mensuel": "589.00",
+      "motorisation": "electrique",
+      "couleur": "Blanc Nacré",
+      "description": "Tesla Model 3 Standard Range+, autonomie 450 km WLTP, Autopilot, charge rapide DC 170 kW. Superchargeur offert 6 mois.",
+      "type": "location",
+      "disponible": true,
+      "created_at": "2024-01-15T08:00:00Z",
+      "updated_at": "2024-01-15T08:00:00Z"
+    }
+  },
+  {
+    "model": "vehicles.vehicle",
+    "pk": 7,
+    "fields": {
+      "marque": "Dacia",
+      "modele": "Sandero",
+      "annee": 2023,
+      "kilometrage": 8000,
+      "prix": "11900.00",
+      "loyer_mensuel": "159.00",
+      "motorisation": "essence",
+      "couleur": "Vert Highland",
+      "description": "Dacia Sandero Stepway Expression, quasi-neuve, MediaNav Evolution, régulateur de vitesse. Rapport qualité-prix imbattable.",
+      "type": "achat",
+      "disponible": true,
+      "created_at": "2024-01-16T10:00:00Z",
+      "updated_at": "2024-01-16T10:00:00Z"
+    }
+  },
+  {
+    "model": "vehicles.vehicle",
+    "pk": 8,
+    "fields": {
+      "marque": "Audi",
+      "modele": "A3",
+      "annee": 2021,
+      "kilometrage": 31000,
+      "prix": "28900.00",
+      "loyer_mensuel": "499.00",
+      "motorisation": "diesel",
+      "couleur": "Gris Chronos",
+      "description": "Audi A3 Sportback 35 TDI S-Line, Virtual Cockpit, S-Tronic 7, Bang & Olufsen. Garantie constructeur jusqu'en 2026.",
+      "type": "location",
+      "disponible": true,
+      "created_at": "2024-01-17T11:00:00Z",
+      "updated_at": "2024-01-17T11:00:00Z"
+    }
+  },
+  {
+    "model": "vehicles.vehicle",
+    "pk": 9,
+    "fields": {
+      "marque": "Ford",
+      "modele": "Puma",
+      "annee": 2022,
+      "kilometrage": 19500,
+      "prix": "19800.00",
+      "loyer_mensuel": "299.00",
+      "motorisation": "essence",
+      "couleur": "Orange Lucid",
+      "description": "Ford Puma ST-Line X mHEV 155ch, MegaBox sous le coffre, SYNC 4, Cruise Control adaptatif.",
+      "type": "achat",
+      "disponible": true,
+      "created_at": "2024-01-18T09:00:00Z",
+      "updated_at": "2024-01-18T09:00:00Z"
+    }
+  },
+  {
+    "model": "vehicles.vehicle",
+    "pk": 10,
+    "fields": {
+      "marque": "Citroën",
+      "modele": "C3",
+      "annee": 2020,
+      "kilometrage": 41000,
+      "prix": "10500.00",
+      "loyer_mensuel": "179.00",
+      "motorisation": "essence",
+      "couleur": "Bleu Céleste",
+      "description": "Citroën C3 Shine Pack, sièges Advanced Comfort, ConnectedCAM Citroën intégré, Apple CarPlay & Android Auto.",
+      "type": "location",
+      "disponible": true,
+      "created_at": "2024-01-19T14:00:00Z",
+      "updated_at": "2024-01-19T14:00:00Z"
+    }
+  },
+  {
+    "model": "vehicles.vehicle",
+    "pk": 11,
+    "fields": {
+      "marque": "Mercedes",
+      "modele": "Classe A",
+      "annee": 2021,
+      "kilometrage": 27000,
+      "prix": "31500.00",
+      "loyer_mensuel": "549.00",
+      "motorisation": "diesel",
+      "couleur": "Noir Cosmos",
+      "description": "Mercedes Classe A 180d AMG Line, MBUX avec assistant vocal, Head-Up Display, pack AMG. Garantie Star Certified.",
+      "type": "achat",
+      "disponible": true,
+      "created_at": "2024-01-20T10:00:00Z",
+      "updated_at": "2024-01-20T10:00:00Z"
+    }
+  },
+  {
+    "model": "vehicles.vehicle",
+    "pk": 12,
+    "fields": {
+      "marque": "Fiat",
+      "modele": "500e",
+      "annee": 2022,
+      "kilometrage": 14000,
+      "prix": "21900.00",
+      "loyer_mensuel": "319.00",
+      "motorisation": "electrique",
+      "couleur": "Vert Rose",
+      "description": "Fiat 500e électrique, autonomie 320 km, charge rapide 85 kW, cabriolet. Bonus écologique inclus dans le prix.",
+      "type": "location",
+      "disponible": true,
+      "created_at": "2024-01-21T11:00:00Z",
+      "updated_at": "2024-01-21T11:00:00Z"
+    }
+  }
+]
