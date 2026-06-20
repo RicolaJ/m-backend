@@ -29,7 +29,7 @@ class VehicleSerializer(serializers.ModelSerializer):
 
 class VehicleWriteSerializer(serializers.ModelSerializer):
     uploaded_images = serializers.ListField(
-        child=serializers.ImageField(), write_only=True, required=False
+        child=serializers.FileField(), write_only=True, required=False
     )
 
     class Meta:
