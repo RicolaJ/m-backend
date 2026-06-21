@@ -24,6 +24,15 @@ class DossierViewSet(viewsets.ModelViewSet):
         ctx['request'] = self.request
         return ctx
 
+    def create(self, request, *args, **kwargs):
+        serializer = DossierCreateSerializer(data=request.data, context={'request': request})
+        serializer.is_valid(raise_exception=True)
+        dossier = serializer.save()
+        return Response(
+         DossierSerializer(dossier, context={'request': request}).data,
+         status=status.HTTP_201_CREATED
+        )
+
     @action(detail=True, methods=['post'], url_path='upload_document')
     def upload_document(self, request, pk=None):
         dossier = self.get_object()
