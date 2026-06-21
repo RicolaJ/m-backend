@@ -3,7 +3,7 @@ from rest_framework.decorators import action
 from rest_framework.response import Response
 from .models import Dossier, DossierDocument
 from .serializers import DossierSerializer, DossierCreateSerializer, DossierDocumentSerializer
-
+from mmotors.email_service import send_dossier_valide, send_dossier_refuse, send_dossier_en_cours
 
 class DossierViewSet(viewsets.ModelViewSet):
     """Client-facing dossier viewset — users see only their own dossiers."""
@@ -60,6 +60,7 @@ class AdminDossierViewSet(viewsets.ReadOnlyModelViewSet):
         dossier = self.get_object()
         dossier.statut = 'valide'
         dossier.save()
+        send_dossier_valide(dossier) 
         return Response(DossierSerializer(dossier, context={'request': request}).data)
 
     @action(detail=True, methods=['post'])
@@ -69,6 +70,7 @@ class AdminDossierViewSet(viewsets.ReadOnlyModelViewSet):
         dossier.statut = 'refuse'
         dossier.motif_refus = motif
         dossier.save()
+        send_dossier_refuse(dossier)
         return Response(DossierSerializer(dossier, context={'request': request}).data)
 
     @action(detail=True, methods=['post'])
@@ -76,4 +78,5 @@ class AdminDossierViewSet(viewsets.ReadOnlyModelViewSet):
         dossier = self.get_object()
         dossier.statut = 'en_cours'
         dossier.save()
+        send_dossier_en_cours(dossier)
         return Response(DossierSerializer(dossier, context={'request': request}).data)
