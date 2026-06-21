@@ -2,6 +2,19 @@ from pathlib import Path
 from decouple import config, Csv
 from datetime import timedelta
 import dj_database_url
+import sentry_sdk
+from sentry_sdk.integrations.django import DjangoIntegration
+
+SENTRY_DSN = config('SENTRY_DSN', default='')
+
+if SENTRY_DSN:
+    sentry_sdk.init(
+        dsn=SENTRY_DSN,
+        integrations=[DjangoIntegration()],
+        environment='production',
+        traces_sample_rate=1.0,
+        send_default_pii=False,
+    )
 
 BASE_DIR = Path(__file__).resolve().parent.parent
 
