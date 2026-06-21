@@ -472,6 +472,38 @@ uploaded_at       — date d'upload
 ```
 
 ---
+## Monitoring — Sentry
+
+Le backend est connecté à **Sentry** pour la surveillance des erreurs en production.
+
+### Ce que Sentry capture
+- Exceptions Django non gérées
+- Erreurs 500
+- Requêtes lentes
+- Erreurs dans les actions admin (validation/refus de dossiers)
+
+### Configuration
+Le SDK est initialisé dans `mmotors/settings.py` via l'intégration Django officielle.
+
+La variable d'environnement requise :
+```env
+SENTRY_DSN=https://xxxx@xxxx.ingest.de.sentry.io/xxxx
+```
+
+À ajouter dans le fichier `.env` sur PythonAnywhere.
+
+### Tester
+```bash
+workon mon_virtualenv
+cd ~/motorsss
+python manage.py shell -c "
+import sentry_sdk
+sentry_sdk.capture_message('Test', level='info')
+print('OK')
+"
+```
+
+Vérifiez dans **sentry.io → projet m-motors-backend → Issues**.
 
 ## Auteur
 
